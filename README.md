@@ -87,7 +87,7 @@ BAG_PODCASTS = [
                 "feedid": 920666,
                 "node": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
                 "boilerpretext": "Hi Dave and Adam, and listeners of Podcasting 2.0. ",
-                "boilerposttext": " Anyway, I encourage anyone that isn't already listening to Causality to visit engineered.network as we analyse what went right & what went wrong & we discover that many outcomes can be predicted, planned for & even prevented and you too can decide if the listener that called me a dreamy narrator was right…or not."}
+                "boilerposttext": " Anyway, I encourage anyone that isn't already listening to Causality to visit engineered.network as we analyse what went right & what went wrong..."}
               }
 
 
