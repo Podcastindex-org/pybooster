@@ -5,7 +5,6 @@
 #
 # Currently this will only boost the first eligible item per file and will wait until the next cyclic execution to auto-boost the next
 # Numerology: https://github.com/Podnews-LLC/boostagram-numerology
-# JOHN / CHIDGEY = 4761 Boost
 #
 # Command line Arguments:
 # -m : Message 'I love your show!'
@@ -13,7 +12,7 @@
 # -s : Show Name 'Podcasting 2.0'
 # -u : URL 'http://mp3s.nashownotes.com/pc20rss.xml'
 # -i : feedID '920666'
-# python3 main.py -m 'I love your show!' -n '030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3' -s 'Podcasting 2.0' -u 'http://mp3s.nashownotes.com/pc20rss.xml' -i 920666
+# python3 main.py -m 'I love your show!' -n '030a58b8653d32b99200a233asdfasdfasdfd155aa0116c176657a4f1722677a3' -s 'Podcasting 2.0' -u 'http://mp3s.nashownotes.com/pc20rss.xml' -i 920666
 #
 # keysend_message: str = '{"podcast": "' + BAG_PODCAST + '", "url": "' + BAG_URL + '", "episode": "' + BAG_EPISODE + '", "ts": ' + str(BAG_TIMESTAMP_INT) + ', "time": "' + BAG_TIMESTAMP_STR + '", "value_msat": ' + str(BAG_MSAT) + ', "value_msat_total": ' + str(BAG_MSAT_TOTAL) + ', "action": "' + BAG_ACTION + '", "sender_name": "' + BAG_SENDER_NAME + '", "app_name": "' + BAG_APP_NAME + '", "message": "' + BAG_MESSAGE + '", "feedID": ' + str(BAG_FEEDID) + '}' ## Full statically defined KeySend Message for reference only
 
@@ -44,7 +43,7 @@ import getopt
 ssl._create_default_https_context = ssl._create_stdlib_context
 
 # Constants Definition
-TESTING_NODE = "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3" # My Testing GetAlby Wallet
+TESTING_NODE = "030a58b8653d32b99200a23asedrfedse1dc7d155aa0116c176657a4f1722677a3" # My Testing GetAlby Wallet
 BOOSTAGRAM_AMOUNT_SATOSHIS = 4761
 ##BOOSTAGRAM_AMOUNT_SATOSHIS = 10
 BAG_PODCASTS = [
@@ -54,12 +53,12 @@ BAG_PODCASTS = [
                 "feedid": 920666,
                 "node": "03ae9f91a0cb8ff43840e3c322c4c61f019d8c1c3cea15a25cfc425ac605e61a4a",
                 "boilerpretext": "Hi Dave and Adam, and listeners of Podcasting 2.0. ",
-                "boilerposttext": " Anyway, I encourage anyone that isn't already listening to Causality to visit engineered.network as we analyse what went right & what went wrong & we discover that many outcomes can be predicted, planned for & even prevented and you too can decide if the listener that called me a dreamy narrator was right…or not."},
+                "boilerposttext": " Anyway, I encourage anyone that isn't already listening to Causality to visit engineered.network as we analyse what went right & what went wrong..."},
                 {"shortname": "Causality",
                 "name": "Causality",
                 "url": "https://engineered.network/causality/feed/index.xml",
                 "feedid": 878147,
-                "node": "030a58b8653d32b99200a2334cfe913e51dc7d155aa0116c176657a4f1722677a3",
+                "node": "030a58b8653d32b99200a23asedrfedse1dc7d155aa0116c176657a4f1722677a3",
                 "boilerpretext": "Hi John, ",
                 "boilerposttext": "...and that's a wrap"}
                 ]
@@ -69,7 +68,7 @@ BAG_PODCAST = "Podcasting 2.0"
 ## BAG_MSAT = 4761000
 ## BAG_MSAT_TOTAL = 4761000
 BAG_ACTION = "boost"
-BAG_SENDER_NAME = "John Chidgey"
+BAG_SENDER_NAME = "John Booster"
 BAG_APP_NAME = "PythonBoost"
 BAG_MESSAGE = "This is a default message"
 BAG_FEEDID = 878147
@@ -81,20 +80,20 @@ BAG_FEEDID = 878147
 
 # Pushover Notifications
 PUSHOVER_ENABLE = True
-PUSHOVER_USER_TOKEN = "uuw5thu91bphk74rthffg1uq9or8z1" # Insert your own User Token Here
-PUSHOVER_API_TOKEN = "aoodsnxxdbn7hct5xwmkw9mpxsisqv" # Insert your own API Token Here
+PUSHOVER_USER_TOKEN = "<TOKEN>" # Insert your own User Token Here
+PUSHOVER_API_TOKEN = "<TOKEN>" # Insert your own API Token Here
 PUSHOVER_NOTIFICATION_TITLE = "Auto Boostagram Sent!"
 
 # Node Details
 VM_ACTIVE = False
-MACAROON_LOCATION_MACOS = "/Users/johnchidgey/Documents/LND/admin.macaroon" # macOS
+MACAROON_LOCATION_MACOS = "/Users/john/Documents/LND/admin.macaroon" # macOS
 MACAROON_LOCATION_VM = "/root/pybooster/admin.macaroon" # Alpine VM
-TLSCERT_LOCATION_MACOS = "/Users/johnchidgey/Documents/LND/fullchain.cer" # macOS
+TLSCERT_LOCATION_MACOS = "/Users/john/Documents/LND/fullchain.cer" # macOS
 TLSCERT_LOCATION_VM = "/root/certs/fullchain.cer" # Alpine VM
-BOOSTAGRAM_FILE_LOCATION_MACOS =  "/Users/johnchidgey/Documents/pybooster/boostagrams.json" # macOS
+BOOSTAGRAM_FILE_LOCATION_MACOS =  "/Users/john/Documents/pybooster/boostagrams.json" # macOS
 BOOSTAGRAM_FILE_LOCATION_VM =  "/root/pybooster/boostagrams.json" # Alpine VM
 
-NODE_ADDRESS = "johnchidgeysnode.duckdns.org" # Personal Raspiblitz
+NODE_ADDRESS = "node.duckdns.org" # Personal Raspiblitz
 ##ENABLE_FILE_BOOSTAGRAMS = True
 ENABLE_FILE_BOOSTAGRAMS = False
 ##FORCE_TEST_WALLET = True
